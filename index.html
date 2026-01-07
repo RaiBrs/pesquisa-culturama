@@ -15,7 +15,7 @@
       <form action="" method="GET">
         <fieldset>
           <legend>Dados pessoais</legend>
-          <!-- Dados pessoais -->
+
           <label for="userName">Nome</label>
           <input
             type="text"
@@ -56,6 +56,81 @@
           <label for="userImage">Foto</label>
           <input type="file" accept="image/*" name="userImage" />
           <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Perfil</legend>
+
+          <p>Gênero:</p>
+          <input type="radio" name="userGender" value="Masculino" />
+          <label for="userGender">Masculino</label>
+
+          <input type="radio" name="userGender" value="Feminino" />
+          <label for="userGender">Feminino</label>
+
+          <input type="radio" name="userGender" value="Outro" />
+          <label for="userGender">Outro</label>
+          <br />
+
+          <label for="maritalStatus">Estado civil:</label>
+          <select name="maritalStatus">
+            <option value="notInformed">Selecione</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">União estável</option>
+          </select>
+        </fieldset>
+
+        <select name="userState">
+          <option value="notInformed" required>Selecione seu estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+
+        <label for="userCity">Cidade:</label>
+        <input type="text" name="userCity" placeholder="Digite sua cidade" />
+        <br />
+
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes Socias</p>
+          <input type="checkbox" name="social" value="instagram" />
+          <label for="social">Instagram</label>
+          <br />
+          <input type="checkbox" name="social" value="facebook" />
+          <label for="social">Facebook</label>
+          <br />
+          <input type="checkbox" name="social" value="linkedin" />
+          <label for="social">LinkedIn</label>
+          <br />
+          <input type="checkbox" name="social" value="X" />
+          <label for="social">X</label>
         </fieldset>
 
         <button type="submit">Enviar</button>
