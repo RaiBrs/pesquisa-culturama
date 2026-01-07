@@ -83,7 +83,7 @@
         </fieldset>
 
         <select name="userState">
-          <option value="notInformed">Selecione seu estado</option>
+          <option value="notInformed" required>Selecione seu estado</option>
           <option value="AC">Acre</option>
           <option value="AL">Alagoas</option>
           <option value="AP">Amapá</option>
@@ -116,6 +116,22 @@
         <label for="userCity">Cidade:</label>
         <input type="text" name="userCity" placeholder="Digite sua cidade" />
         <br />
+
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes Socias</p>
+          <input type="checkbox" name="social" value="instagram" />
+          <label for="social">Instagram</label>
+          <br />
+          <input type="checkbox" name="social" value="facebook" />
+          <label for="social">Facebook</label>
+          <br />
+          <input type="checkbox" name="social" value="linkedin" />
+          <label for="social">LinkedIn</label>
+          <br />
+          <input type="checkbox" name="social" value="X" />
+          <label for="social">X</label>
+        </fieldset>
 
         <button type="submit">Enviar</button>
       </form>
