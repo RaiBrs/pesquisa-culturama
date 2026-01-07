@@ -62,14 +62,24 @@
           <legend>Perfil</legend>
 
           <p>Gênero:</p>
-          <input type="radio" name="userGender" value="Masculino"/>
+          <input type="radio" name="userGender" value="Masculino" />
           <label for="userGender">Masculino</label>
 
-          <input type="radio" name="userGender" value="Feminino"/>
+          <input type="radio" name="userGender" value="Feminino" />
           <label for="userGender">Feminino</label>
 
-          <input type="radio" name="userGender" value="Outro"/>
+          <input type="radio" name="userGender" value="Outro" />
           <label for="userGender">Outro</label>
+          <br />
+
+          <label for="maritalStatus">Estado civil:</label>
+          <select name="maritalStatus">
+            <option value="notInformed">gitSelecione</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">União estável</option>
+          </select>
         </fieldset>
 
         <button type="submit">Enviar</button>
